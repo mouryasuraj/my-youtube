@@ -1,11 +1,7 @@
-
-
 const VideoContainer = () => {
   return (
-    <div>
-        Video Container
-    </div>
-  )
-}
+    <div></div>
+  );
+};
 
-export default VideoContainer
+export default VideoContainer;

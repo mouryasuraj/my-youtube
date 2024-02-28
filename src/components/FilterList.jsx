@@ -1,11 +1,5 @@
-
-
 const FilterList = () => {
-  return (
-    <div>
-      Filter Button List
-    </div>
-  )
-}
+  return <div className="">filter BUtton</div>;
+};
 
-export default FilterList
+export default FilterList;

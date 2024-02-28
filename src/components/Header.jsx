@@ -29,14 +29,14 @@ const Header = () => {
             title="Search"
             className="px-5 py-2 border-t border-r border-b border-gray-300 hover:bg-gray-100 rounded-r-full py-2x"
           >
-            <i className="fa-solid fa-search" />
+            <i className="fa-solid fa-search cursor-pointer" />
           </button>
         </form>
       </div>
       {/* section 3 */}
       <div className="col-span-1">
-        <i className="fa-solid fa-search md:hidden px-4 py-2 text-lg text-gray-800" />
-        <i className="fa-solid fa-user px-2 text-lg md:text-2xl md:cursor-pointer md:hover:bg-gray-200 md:px-[12px] md:py-[7px] md:rounded-full" />
+        <i className="fa-solid fa-search md:hidden px-4 py-2 text-lg text-gray-800 cursor-pointer" />
+        <i className="fa-solid fa-user px-2 text-lg md:text-2xl md:cursor-pointer md:hover:bg-gray-200 md:px-[12px] md:py-[7px] md:rounded-full cursor-pointer" />
       </div>
     </div>
   );

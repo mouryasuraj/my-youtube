@@ -1,14 +1,13 @@
-import FilterList from "./FilterList"
-import VideoContainer from "./VideoContainer"
-
+import FilterList from "./FilterList";
+import VideoContainer from "./VideoContainer";
 
 const MainContainer = () => {
   return (
-    <div>
+    <div className="w-full px-5">
       <FilterList />
       <VideoContainer />
     </div>
-  )
-}
+  );
+};
 
-export default MainContainer
+export default MainContainer;

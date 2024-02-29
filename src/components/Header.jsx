@@ -5,7 +5,7 @@ const Header = () => {
   const { handleSearch, handleIsMenuOpen } = useHeader();
 
   return (
-    <div className="md:px-5 px-2 md:py-2 py-1 grid grid-flow-col place-items-center place-content-between sticky top-0 left-0 w-full bg-white z-[100] md:shadow-none shadow-md">
+    <div className="md:px-5 px-2 md:py-2 py-1 grid grid-flow-col place-items-center place-content-between sticky top-0 left-0 w-full bg-white z-[100]">
       {/* section 1 */}
       <div className="flex items-center md:gap-5 gap-1 col-span-1">
         <i

@@ -76,11 +76,11 @@ export const section3 = [
     },
     {
         name: 'Fashion & Beauty',
-        icon: 'scissors'
+        icon: 'vest-patches'
     },
     {
         name: 'Podcasts',
-        icon: 'scissors'
+        icon: 'radio'
     },
 ]
 
@@ -104,3 +104,6 @@ export const filterBtnList = [
     'Comedy',
     'Indian Music'
 ]
+
+// YOUTUBE API
+export const YOUTBE_API_URL = 'https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&key=' + import.meta.env.VITE_YOUTUBE_KEY

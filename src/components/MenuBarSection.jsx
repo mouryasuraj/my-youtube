@@ -8,7 +8,7 @@ const MenuBarSection = ({ sectionName, sectionItems }) => {
         return (
           <button
             key={item.name}
-            className="w-full flex items-center md:gap-5 gap-3 md:px-4 px-3 py-2 rounded-lg md:py-3 hover:bg-gray-100"
+            className="w-full flex items-center md:gap-5 gap-3 md:px-4 px-3 py-2 rounded-lg md:py-3 hover:bg-gray-200"
           >
             <i
               className={`fa-solid fa-${item.icon} text-xl w-6 text-gray-800`}

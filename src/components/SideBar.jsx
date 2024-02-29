@@ -28,7 +28,7 @@ const SideBar = () => {
         onClick={handleIsMenuOpen}
         className={`${
           !isMenuOpen ? "w-full" : "w-0"
-        } h-screen fixed top-0 left-0 md:hidden transition-all duration-300 bg-black opacity-50 z-10`}
+        } h-screen fixed top-0 left-0 md:hidden transition-all duration-300 bg-black opacity-50 z-10 cursor-pointer`}
       ></div>
     </div>
   );

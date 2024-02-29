@@ -31,26 +31,7 @@ const VideoCard = () => {
                 />
               </div>
               <div className="space-y-1 w-[100%]">
-                <p className="font-bold line-clamp-2">
-                  {title} Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Sint, animi a Lorem ipsum dolor, sit amet consectetur
-                  adipisicing elit. Ut, fuga qui veniam explicabo quos
-                  reiciendis fugiat voluptate nam velit ex doloribus totam modi
-                  consequuntur facere recusandae praesentium cupiditate odio
-                  rerum! Lorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Delectus ad qui excepturi magni, officiis voluptatem
-                  ipsa ex eos. Est facere sed magnam modi, molestiae, vitae nam
-                  placeat commodi, laudantium harum earum animi sequi voluptas
-                  necessitatibus iure dicta quia ipsa quaerat quidem debitis
-                  deserunt iusto quisquam cupiditate? Officiis eaque eveniet id
-                  consectetur unde perspiciatis? Veniam, consequuntur!
-                  Accusantium officiis atque adipisci nobis quidem quis aut
-                  totam? Dignissimos quam id harum ipsum sed architecto impedit
-                  sit repudiandae, ab aut iure sunt nulla praesentium alias
-                  reiciendis beatae eaque eligendi velit. At doloremque cum
-                  ipsam, sit repellendus earum nesciunt repudiandae odit error,
-                  officiis quibusdam eaque!
-                </p>
+                <p className="font-bold line-clamp-2">{title}</p>
                 <p className="text-gray-500">{channelTitle}</p>
                 <p className="text-gray-500">{statistics.viewCount} views</p>
               </div>

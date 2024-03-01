@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const videosSlice = createSlice({
     name: 'video',
     initialState: {
-        homePageVideos: null
+        homePageVideos: null,
     },
     reducers: {
         addHomePageVideos: (state, action) => {

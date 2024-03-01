@@ -1,7 +1,7 @@
 import { filterBtnList } from "../utils/constant";
 const FilterList = () => {
   return (
-    <div className="w-full bg-white fixed md:top-[62px] overflow-x-scroll scrollbar-none ">
+    <div className="w-full bg-white fixed md:top-[62px] overflow-x-scroll scrollbar-none z-[19] ">
       {/* <i className="fa-solid fa-arrow-left px-4 hidden md:block py-3 bg-gray-900 rounded-md cursor-pointer hover:bg-gray-700 text-white bg-opacity-70 absolute top-[12px] " />
       <i className="fa-solid fa-arrow-right px-4 hidden md:block py-3 right-0 bg-gray-900 rounded-md cursor-pointer hover:bg-gray-700 text-white bg-opacity-70 absolute top-[12px] " /> */}
       <div className="py-3 inline-block whitespace-nowrap space-x-3 pr-16 ">

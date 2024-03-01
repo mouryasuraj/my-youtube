@@ -13,7 +13,7 @@ const SideBar = () => {
           isMenuOpen
             ? "md:w-[250px] w-0 md:px-4 md:py-3 px-0 py-0 "
             : "md:w-0 w-[250px] md:px-0 md:py-0 px-4 py-3"
-        } md:sticky fixed bg-white md:top-[62px]  transition-all duration-300 z-20 h-screen md:h-[calc(100vh-62px)] overflow-y-scroll scrollbar-none hover:scrollbar-thin`}
+        } md:sticky fixed bg-white md:top-[62px]  transition-all duration-300 z-[20] h-screen md:h-[calc(100vh-62px)] overflow-y-scroll scrollbar-none hover:scrollbar-thin `}
       >
         <div className="space-y-5 md:mb-0 mb-32">
           <MenuBarSection sectionName="" sectionItems={section1} />

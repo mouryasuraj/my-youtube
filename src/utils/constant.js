@@ -1,4 +1,4 @@
-// Menu bar section Names
+// Menu bar sections
 
 export const section1 = [
     {

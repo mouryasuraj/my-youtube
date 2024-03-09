@@ -1,3 +1,4 @@
+import useChannel from "../hooks/useChannel";
 import useVideoCard from "../hooks/useVideoCard";
 import PropTypes from "prop-types";
 
@@ -7,10 +8,14 @@ const VideoCard = ({ video }) => {
     thumbnailUrl,
     title,
     channelTitle,
+    channelId,
     formattedDate,
     formattedViews,
     formattedDuration,
   } = useVideoCard(video);
+  const thumbnails = useChannel(channelId);
+  if (!thumbnails) return;
+  const profileURL = thumbnails.default.url;
 
   return (
     <div
@@ -31,7 +36,7 @@ const VideoCard = ({ video }) => {
         <div className="w-[50px]">
           <img
             className="w-[40px] h-[40px] object-cover rounded-full "
-            src={thumbnailUrl}
+            src={profileURL}
             alt="profile"
           />
         </div>

@@ -18,8 +18,9 @@ const Header = () => {
       <div className="flex items-center md:gap-5 gap-1 col-span-1">
         <i
           onClick={handleIsMenuOpen}
-          className="fa-solid fa-bars text-2xl cursor-pointer md:hover:bg-gray-200 md:px-[12px] px-2 md:py-[6px] rounded"
+          className="fa-solid fa-bars text-2xl cursor-pointer md:hover:bg-gray-200 md:px-[12px] px-2 md:py-[6px] rounded-full"
         />
+
         <Logo />
       </div>
       {/* section 2 */}

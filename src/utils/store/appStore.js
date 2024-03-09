@@ -7,7 +7,7 @@ const appstore = configureStore({
     reducer: {
         app: appReducer,
         videos: videosReducer,
-        search: searchReducer
+        search: searchReducer,
     }
 })
 

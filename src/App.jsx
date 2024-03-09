@@ -5,7 +5,6 @@ import appstore from "./utils/store/appStore";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainContainer from "./components/MainContainer";
 import WatchVideo from "./components/WatchVideo";
-import "./App.css";
 
 const appRouter = createBrowserRouter([
   {

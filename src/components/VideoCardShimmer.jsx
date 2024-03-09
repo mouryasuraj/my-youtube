@@ -1,10 +1,9 @@
-
 const VideoCardShimmer = () => {
-
-
   return (
     <div className="flex flex-col gap-3 first-line:md:pb-4">
-      <div className="rounded-xl bg-gray-200 h-[230px]"></div>
+      <div className="rounded-xl bg-gray-300 h-[230px] relative overflow-hidden">
+        <div className="absolute w-full h-full top-0 left bg-gradient-to-r from-transparent via-[#ebebeb] to-transparent animate-ping"></div>
+      </div>
       <div className="flex gap-4">
         <div className="w-[10%] h-[40px] bg-gray-300 rounded-full"></div>
         <div className="w-[85%]">

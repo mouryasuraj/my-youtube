@@ -36,7 +36,9 @@ const VideoCard = ({ video }) => {
           />
         </div>
         <div className="w-[80%] mt-[-2px] pr-5">
-          <p className="font-bold line-clamp-2 mb-1">{title}</p>
+          <p title={title} className="font-bold line-clamp-2 mb-1">
+            {title}
+          </p>
           <p className="text-gray-500 hover:text-gray-800 font-semibold w-fit">
             {channelTitle}
           </p>

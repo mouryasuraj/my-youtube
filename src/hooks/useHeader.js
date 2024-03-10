@@ -13,12 +13,16 @@ const useHeader = () => {
     const dispatch = useDispatch()
 
     const fetchSearchResults = async () => {
-        const data = await fetch(YOUTUBE_SUGGESTION_API + searchQuery);
-        const json = await data.json();
-        setSuggestion(json[1])
-        dispatch(addCacheResults({
-            [searchQuery]: json[1]
-        }))
+        try {
+            const data = await fetch(YOUTUBE_SUGGESTION_API + searchQuery);
+            const json = await data.json();
+            setSuggestion(json[1])
+            dispatch(addCacheResults({
+                [searchQuery]: json[1]
+            }))
+        } catch (error) {
+            console.log(error);
+        }
     };
     /*eslint-disable */
     useEffect(() => {

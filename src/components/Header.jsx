@@ -52,6 +52,7 @@ const Header = () => {
             />
             {showSuggestion &&
               searchQuery.length > 0 &&
+              suggestion &&
               suggestion.length > 0 && (
                 <ul className="absolute bg-white w-full shadow-2xl py-6 rounded-xl">
                   {suggestion.map((query) => (

@@ -5,7 +5,9 @@ const Body = () => {
   return (
     <div className="w-full flex">
       <SideBar />
-      <Outlet />
+      <div className="mt-12">
+        <Outlet />
+      </div>
     </div>
   );
 };

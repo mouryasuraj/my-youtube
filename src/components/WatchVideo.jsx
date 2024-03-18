@@ -1,26 +1,17 @@
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { closeMenu, toggleMenu } from "../utils/slices/appSlice";
-import { useSearchParams } from "react-router-dom";
+import Suggestions from "./Suggestions";
+import WatchVideoInfo from "./WatchVideoInfo";
+import CommentsContainer from "./CommentsContainer";
+import useWatchVideo from "../hooks/useWatchVideo";
 
 const WatchVideo = () => {
-  const [searchParams] = useSearchParams();
-  const url = searchParams.get("v");
-
-  const dispatch = useDispatch();
-  /* eslint-disable */
-  useEffect(() => {
-    dispatch(closeMenu());
-    return () => dispatch(toggleMenu(true));
-  }, []);
-  /* eslint-enable */
+  const { channelInfo, url } = useWatchVideo();
 
   return (
-    <div className="absolute md:px-5 px-1 py-5 w-full">
-      <div className="flex flex-wrap gap-5">
+    <div className="absolute md:px-9 px-1 py-5 w-full left-0 h-full">
+      <div className="flex lg:flex-nowrap flex-wrap gap-5">
         <div className="lg:w-fit w-full">
           {/* Video */}
-          <div className="lg:w-[63vw] lg:h-[35vw] w-full h-[55vw]">
+          <div className="lg:w-[62vw] lg:h-[35vw] w-full h-[55vw]">
             <iframe
               className="md:rounded-xl rounded-md w-full h-full"
               src={`https://www.youtube.com/embed/${url}?autoplay=0`}
@@ -31,10 +22,11 @@ const WatchVideo = () => {
             ></iframe>
           </div>
           {/* Vidoe  Info */}
-          <p>Video Info</p>
+          <WatchVideoInfo channelInfo={channelInfo} />
+          <CommentsContainer />
         </div>
         {/* Video Suggestions */}
-        <div>Suggestion</div>
+        <Suggestions />
       </div>
     </div>
   );

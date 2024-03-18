@@ -19,6 +19,6 @@ const useVideoContainer = () => {
         !homePageVideos && fetchPopularVideos();
     }, []);
     /* eslint-enable */
-    return {}
+    return { homePageVideos }
 }
 export default useVideoContainer;

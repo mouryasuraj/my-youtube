@@ -9,8 +9,7 @@ const CommentsList = ({ commentsData }) => {
             <Comments comment={comment} />
             {comment.replies.length > 0 && (
               <div>
-                <p className="font-semibold">Replies:</p>
-                <div className="pl-10 border-l-2 py-1">
+                <div className="pl-10 border-l py-1">
                   <CommentsList commentsData={comment.replies} />
                 </div>
               </div>

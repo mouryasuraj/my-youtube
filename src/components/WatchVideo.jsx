@@ -1,7 +1,7 @@
-import Suggestions from "./Suggestions";
 import WatchVideoInfo from "./WatchVideoInfo";
 import CommentsContainer from "./CommentsContainer";
 import useWatchVideo from "../hooks/useWatchVideo";
+import LiveChat from "./LiveChat";
 
 const WatchVideo = () => {
   const { channelInfo, url } = useWatchVideo();
@@ -26,7 +26,7 @@ const WatchVideo = () => {
           <CommentsContainer />
         </div>
         {/* Video Suggestions */}
-        <Suggestions />
+        <LiveChat />
       </div>
     </div>
   );

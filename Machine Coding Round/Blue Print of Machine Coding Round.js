@@ -18,4 +18,15 @@
 
 3. How will you get the data for your videos?
 --> a.
+
+
+//live chat >>> Infinite scroll >>> Pagination
+
+
+// Live chat feature
+1. There are two ways to get the data 
+    a. Web Socket (Whatspp, trading apps,  )
+    b. API Polling (gmail, youtube, cricbuz)
+
 */
+

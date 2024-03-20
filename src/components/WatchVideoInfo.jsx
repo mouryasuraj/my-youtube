@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import calculateViews from "../utils/calculateViews";
 const WatchVideoInfo = ({ channelInfo }) => {
   if (!channelInfo) return;
-  console.log(channelInfo);
   const { snippet, statistics } = channelInfo;
   const { title, thumbnails } = snippet;
   const { subscriberCount } = statistics;

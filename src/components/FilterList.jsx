@@ -1,4 +1,4 @@
-import { filterBtnList } from "../utils/constant";
+import { filterBtnList } from "../utils/helper";
 const FilterList = () => {
   return (
     <div className="w-full bg-white fixed md:top-[62px] overflow-x-scroll scrollbar-none z-[19] ">

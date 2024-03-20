@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import useHeader from "../hooks/useHeader";
 import MenuBarSection from "./MenuBarSection";
-import { section1, section2, section3 } from "../utils/constant";
+import { section1, section2, section3 } from "../utils/helper";
 
 const SideBar = () => {
   const isMenuOpen = useSelector((store) => store.app.isMenuOpen);
